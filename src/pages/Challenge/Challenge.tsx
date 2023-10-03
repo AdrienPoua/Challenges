@@ -9,11 +9,11 @@ export default function Challenge() {
   const { id } = useParams<{ id?: string }>();
   const Challenges: { key: string; element: JSX.Element }[] = [
     {
-      key: '651412c2afc10827c17ae838',
+      key: '01',
       element: <Challenge01 />,
     },
     {
-      key: '65141312afc10827c17ae83a',
+      key: '02',
       element: <Challenge02 />,
     },
   ];
