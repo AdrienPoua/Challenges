@@ -1,27 +1,19 @@
 import { useEffect, useMemo } from 'react';
 import styles from './styles.module.scss';
-import clap from './sounds/clap.wav';
-import hihat from './sounds/hihat.wav';
-import kick from './sounds/kick.wav';
-import openhat from './sounds/openhat.wav';
-import boom from './sounds/boom.wav';
-import ride from './sounds/ride.wav';
-import snare from './sounds/snare.wav';
-import tom from './sounds/tom.wav';
-import tink from './sounds/tink.wav';
 
 export default function Index() {
   const audioElements: { [key: number]: HTMLAudioElement } = useMemo(() => {
+    const publicUrl = import.meta.env.VITE_PUBLIC_URL;
     return {
-      65: new Audio(clap),
-      83: new Audio(hihat),
-      68: new Audio(kick),
-      70: new Audio(openhat),
-      71: new Audio(boom),
-      72: new Audio(ride),
-      74: new Audio(snare),
-      75: new Audio(tom),
-      76: new Audio(tink),
+      65: new Audio(`${publicUrl}/sounds/clap.wav`),
+      83: new Audio(`${publicUrl}/sounds/hihat.wav`),
+      68: new Audio(`${publicUrl}/sounds/kick.wav`),
+      70: new Audio(`${publicUrl}/sounds/openhat.wav`),
+      71: new Audio(`${publicUrl}/sounds/boom.wav`),
+      72: new Audio(`${publicUrl}/sounds/ride.wav`),
+      74: new Audio(`${publicUrl}/sounds/snare.wav`),
+      75: new Audio(`${publicUrl}/sounds/tom.wav`),
+      76: new Audio(`${publicUrl}/sounds/tink.wav`),
     };
   }, []);
 
