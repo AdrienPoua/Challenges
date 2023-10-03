@@ -1,0 +1,15 @@
+.arrow {
+    padding : 30px;
+    border : solid 10px white;
+}
+
+[data-position="left"] > * {
+    transform: translateX(100%) rotate(45deg);
+    border-top : none;
+    border-right : none;
+}
+[data-position="right"] > * {
+    transform: rotate(-45deg);
+    border-top : none;
+    border-left : none;
+}

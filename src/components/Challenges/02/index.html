@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS + CSS Clock</title>
+    <link rel="stylesheet" href="modale.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://fav.farm/🔥" />
+  </head>
+  <body>
+    <dialog id="modale">
+      <h1 class="h1">Voici ce que j'ai appris</h1>
+      <ul class="ul">
+        <li class="li">
+          Pour modifier dynamiquement un style CSS en JS, je peux :
+          <br />
+          1) Utiliser une variable CSS ("custom property") et la manipuler avec
+          la méthode setProperty de la propriété "style" de l'élément concerné.
+          <br />
+          2) Appliquer un style in-line en modifiant directement les propriétés
+          de l'objet style de l'élément concerné.
+        </li>
+
+        <li class="li">
+          Pour obtenir des informations sur la date ou l'heure actuelle, je peux
+          utiliser des méthodes sur une instance de l'objet créée par le
+          constructeur integré Date().
+        </li>
+      </ul>
+
+      <button id="closeButton">Fermer</button>
+    </dialog>
+    <button id="openButton"></button>
+    <div class="clock">
+      <div class="clock-face">
+        <div class="hand hour-hand"></div>
+        <div class="hand min-hand"></div>
+        <div class="hand second-hand"></div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./modale.js"></script>
+  </body>
+</html>
