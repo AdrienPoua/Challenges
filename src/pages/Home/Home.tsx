@@ -14,8 +14,8 @@ export default function Index({ challenges }: { challenges: Chall[] }) {
           <Row className="mb-4">
             <Col className="d-flex flex-wrap gap-5 justify-content-center ">
               {challenges.length > 0 &&
-                challenges.map(({ tags, _id }) => (
-                  <Challenge tags={tags} key={_id} id={_id} />
+                challenges.map(({ tags, _id, img }) => (
+                  <Challenge tags={tags} key={_id} img={img} id={_id} />
                 ))}
             </Col>
           </Row>
