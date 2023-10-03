@@ -62,8 +62,8 @@ export default function Index() {
     <div className={styles.container}>
       <div className={styles.keys}>
         {Object.entries(audioElements).map(([keyCode, audio]) => {
-          const startIndex = audio.src.indexOf('sounds') + 7;
-          const endIndex = audio.src.indexOf('.wav');
+          const startIndex = audio.src.indexOf('assets') + 7;
+          const endIndex = audio.src.lastIndexOf('-');
 
           return (
             <div key={keyCode} data-key={keyCode} className={styles.key}>
