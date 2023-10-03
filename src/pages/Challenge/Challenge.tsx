@@ -23,7 +23,7 @@ export default function Challenge() {
 
   return (
     <>
-      <NavLink to="http://localhost:5173">
+      <NavLink to="/">
         <FcHome className={styles.home} />
       </NavLink>
       <Arrows Challenges={Challenges} currentIndex={currentIndex} />
