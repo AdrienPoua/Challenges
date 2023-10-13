@@ -11,8 +11,8 @@ export function App() {
   useEffect(() => {
     fetch(endpointChallenge)
       .then((res) => res.json())
-      .then((challenge) => {
-        setChallenges(challenge);
+      .then((challs) => {
+        setChallenges(challs);
       });
   }, []);
 
