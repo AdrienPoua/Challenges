@@ -18,7 +18,7 @@ export function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Home challenges={challenges} />} />
+      {/* <Route path="/" element={<Home challenges={challenges} />} /> */}
       <Route path="/challenges/:id" element={<Challenge />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

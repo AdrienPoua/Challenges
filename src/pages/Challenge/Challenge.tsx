@@ -23,9 +23,9 @@ export default function Challenge() {
 
   return (
     <>
-      <NavLink to="/">
+      {/* <NavLink to="/">
         <FcHome className={styles.home} />
-      </NavLink>
+      </NavLink> */}
       <Arrows Challenges={Challenges} currentIndex={currentIndex} />
       {match && match.element}
     </>
