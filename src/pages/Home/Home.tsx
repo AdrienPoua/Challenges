@@ -6,7 +6,6 @@ import Challenge from '../../components/Challenge/card.jsx';
 import { Chall } from '../../types/index';
 
 export default function Index({ challenges }: { challenges: Chall[] }) {
-  console.log(challenges)
   return (
     <>
       <h1 className="text-center mb-5 p-5 ">Challenges</h1>
